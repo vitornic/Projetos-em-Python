@@ -10,6 +10,6 @@ else:
     consumo = (Kw * 0.15)
 icms = (consumo * 0.18)
 total = (consumo + icms)
-print('O valor pago ao conumo de energia é: ',consumo)
+print('O valor pago ao consumo de energia é: ',consumo)
 print('Valor icms: ',icms)
 print('Total: ',total)
