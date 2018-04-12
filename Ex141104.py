@@ -1,0 +1,27 @@
+sal = float(input('Informe o salário '))
+filhos = int(input('Quantos filhos vc tem '))
+if sal <= 2000:
+    adicional = (sal/2)
+    AE = (filhos * 100)
+    salario = (sal + adicional + AE)
+    INSS = (salario * 0.15)
+    SF = (salario - INSS)
+if (sal > 2000) and (sal < 3000):
+    adicional = (sal/3.3)
+    AE = (filhos * 80)
+    salario = (sal + adicional + AE)
+    INSS = (salario * 0.18)
+    SF = (salario - INSS)
+if (sal > 3000) and (sal < 4000):
+    adicional = (sal/5)
+    AE = (filhos * 90)
+    salario = (sal + adicional + AE)
+    INSS = (salario * 0.22)
+    SF = (salario - INSS)
+if sal > 4000:
+    adicional = (sal/6)
+    AE = (filhos * 55)
+    salario = (sal + adicional + AE)
+    INSS = (salario * 0.17)
+    SF = (salario - INSS)
+print('O adicional é:',SF)
